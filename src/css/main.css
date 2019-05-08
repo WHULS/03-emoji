@@ -1,3 +1,14 @@
+/* Fonts */
+@font-face {
+    font-family: 'Bickley';
+    src: url('../font/Bickley.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'tie-shan';
+    src: url('../font/立体铁山硬笔行楷简.ttf') format('truetype');
+}
+
+/* Style */
 .return-icon {
     height: 1em;
     width: 1em;
@@ -21,4 +32,30 @@ img {
     transform: rotate(90deg);
     width: 50px;
     height: 50px;
+}
+.slogan {
+    position: fixed;
+    right: 15px;
+    top: 5px;
+    height: 180px;
+    width: 500px;
+    border: 1px dashed gray;
+    border-radius: 10px;
+    opacity: 0.7;
+    background-color: azure;
+    padding: 0 5px;
+    font-size: 25px;
+    text-align: center;
+    vertical-align: middle;
+}
+.slogan > .cn {
+    font-size: 50px;
+    font-family: 'tie-shan';
+}
+.slogan > .en {
+    font-size: 50px;
+    font-family: 'Bickley';
+}
+p {
+    margin: 2px;
 }

@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>03 emoji</title>
+    <!-- External Library -->
     <script type="text/javascript" src="./src/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./src/js/vue-2.6.10.min.js"></script>
+
+    <!-- Icon -->
     <link rel="icon" type="image/jpg" href="./yellow-chicken-1.jpg"/>
+
+    <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="./src/css/main.css"/>
 
-    <!-- <script src='./[1]yellow-chicken/list.js'></script>
-    <script src='./[2]panda/list.js'></script>
-    <script src="./[3]little-cute/list.js"></script>
-    <script src="./[4]cat-and-dog/list.js"></script>
-    <script src="./[5]Tom-and-Jerry/list.js"></script> -->
     <script src="./list.js"></script>
 </head>
 <body>
     <div id="main">
+        <div class="slogan">
+            <p class="cn">愿你走出半生，归来仍是少年</p>
+            <p class="en">Never Be The Same</p>
+        </div>
         <div id="catalog">
             <h1>Catalog</h1>
             <ul>
@@ -48,37 +52,6 @@
             data() {
                 return {
                     emoji: emojis,
-                    // emoji: [{
-                    //     id: "yellow-chicken",
-                    //     list: ChickenList,
-                    //     header: "Yellow Chicken ?",
-                    //     path: "./[1]yellow-chicken/",
-                    //     vif: false
-                    // },{
-                    //     id: "panda",
-                    //     list: PandaList,
-                    //     header: "Panda",
-                    //     path: "./[2]panda/",
-                    //     vif: false
-                    // },{
-                    //     id: "little-cute",
-                    //     list: LittleCuteList,
-                    //     header: "Little Cute",
-                    //     path: "./[3]little-cute/",
-                    //     vif: false
-                    // },{
-                    //     id: "cat",
-                    //     list: CatList,
-                    //     header: "Cat",
-                    //     path: "./[4]cat/",
-                    //     vif: false
-                    // },{
-                    //     id: "tom-and-jerry",
-                    //     list: TomJerryList,
-                    //     header: "Tom and Jerry",
-                    //     path: "./[5]Tom-and-Jerry",
-                    //     vif: false
-                    // }],
                     isFloatWindowShow: false
                 }
             }, // data
