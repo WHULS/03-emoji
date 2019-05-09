@@ -19,7 +19,7 @@
 </head>
 <body>
     <div id="main">
-        <div class="slogan">
+        <div class="slogan" v-show="isSloganShow">
             <p class="cn">愿你走出半生，归来仍是少年</p>
             <p class="en">Never Be The Same</p>
         </div>
@@ -52,7 +52,8 @@
             data() {
                 return {
                     emoji: emojis,
-                    isFloatWindowShow: false
+                    isFloatWindowShow: false,
+                    isSloganShow: false
                 }
             }, // data
             methods: {
@@ -61,10 +62,13 @@
                         return e.id == index
                     });
                     item.vif = true;
+                },
+                controlSlogenShow(width, threshold=500) {
+                    this.isSloganShow = width >= threshold ? true : false;
                 }
             }, // methods
             created() {
-                
+                this.controlSlogenShow(innerWidth);
             }, // created
             mounted() {
                 
@@ -78,6 +82,9 @@
                 vue.isFloatWindowShow = true;
             }
         };
+        window.onresize = e => {
+            vue.controlSlogenShow(e.target.innerWidth);
+        }
     </script>
 </body>
 </html>
